@@ -9,12 +9,16 @@ Personalised Ad Blocker is a lightweight Chrome extension that blocks ads and tr
 	•	Optimized performance with low CPU and memory usage
 
 # Installation
-# 1. Download or clone this repository: 
+ 1. Download or clone this repository: 
     git clone https://github.com/Purushottamnardewad/PersonalisedAdBlocker.git
-# 2. Open Chrome Extensions (chrome://extensions/)
-# 3. Enable Developer Mode
-# 4. Click Load unpacked and select the cloned PersonalisedAdBlocker folder
-# 5. The extension icon will appear in the Chrome toolbar
+
+ 2. Open Chrome Extensions (chrome://extensions/)
+
+ 3. Enable Developer Mode
+
+ 4. Click Load unpacked and select the cloned PersonalisedAdBlocker folder
+
+ 5. The extension icon will appear in the Chrome toolbar
 
 # How to Use
 	•	Toggle blocking on/off from the extension popup
