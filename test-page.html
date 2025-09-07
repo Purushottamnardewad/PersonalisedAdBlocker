@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ad Blocker Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        .blocked { color: green; font-weight: bold; }
+        .not-blocked { color: red; font-weight: bold; }
+        .ad-banner, .advertisement { 
+            background: red; 
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+            margin: 10px 0; 
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Ad Blocker Test Page</h1>
+    
+    <div class="test-section">
+        <h3>Test 1: CSS-based Ad Elements (should be hidden)</h3>
+        <div class="ad-banner">This ad banner should be hidden by CSS blocking</div>
+        <div class="advertisement">This advertisement should be hidden</div>
+        <div class="adsystem">This ad system element should be hidden</div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Test 2: Network Request Blocking</h3>
+        <p>Check browser console for blocked requests to:</p>
+        <ul>
+            <li>Google Ads (should be blocked)</li>
+            <li>Amazon Ads (should be blocked)</li>
+            <li>Facebook Tracking (should be blocked)</li>
+        </ul>
+        
+        <script>
+            // These requests should be blocked by declarativeNetRequest rules
+            const testRequests = [
+                'https://googleads.g.doubleclick.net/test.js',
+                'https://s.amazon-adsystem.com/test.js',
+                'https://www.facebook.com/tr?test=1'
+            ];
+            
+            testRequests.forEach(url => {
+                fetch(url).then(() => {
+                    console.log('❌ NOT BLOCKED:', url);
+                }).catch((error) => {
+                    console.log('✅ BLOCKED:', url);
+                });
+            });
+        </script>
+    </div>
+    
+    <div class="test-section">
+        <h3>Test 3: Iframe Ad Blocking</h3>
+        <iframe src="https://googleads.g.doubleclick.net/test.html" 
+                width="300" height="250" 
+                style="border: 2px solid red;">
+            This iframe ad should be blocked
+        </iframe>
+    </div>
+    
+    <div class="test-section">
+        <h3>Results</h3>
+        <p>✅ <strong>Working correctly</strong> if:</p>
+        <ul>
+            <li>Red ad banners above are hidden/invisible</li>
+            <li>Browser console shows blocked network requests</li>
+            <li>Iframe ad is not loading</li>
+        </ul>
+    </div>
+    
+    <script>
+        // Check if ad elements are properly hidden
+        setTimeout(() => {
+            const adElements = document.querySelectorAll('.ad-banner, .advertisement, .adsystem');
+            let hiddenCount = 0;
+            
+            adElements.forEach(el => {
+                const style = window.getComputedStyle(el);
+                if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') {
+                    hiddenCount++;
+                }
+            });
+            
+            console.log(`Ad elements hidden: ${hiddenCount}/${adElements.length}`);
+            
+            if (hiddenCount === adElements.length) {
+                console.log('✅ CSS-based ad blocking is working!');
+            } else {
+                console.log('❌ CSS-based ad blocking may not be working properly');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

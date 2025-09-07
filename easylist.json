@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://googleads.g.doubleclick.net/*",
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://pagead2.googlesyndication.com/pagead/*",
+      "resourceTypes": [
+        "sub_frame",
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 7,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://s.amazon-adsystem.com/*",
+      "resourceTypes": [
+        "sub_frame",
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 7,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://www.facebook.com/tr*",
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 6,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://ib.adnxs.com/*",
+      "resourceTypes": [
+        "sub_frame",
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 6,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*/ads/vast\\.xml.*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  }
+]

@@ -1,0 +1,36 @@
+/* Global CSS to hide common ad elements */
+/* Conservative approach to avoid breaking websites */
+
+/* Specific ad classes only */
+.advertisement,
+.banner-ad,
+.adsystem,
+.adsbygoogle,
+ins.adsbygoogle,
+.sponsored-content,
+.ad-banner,
+.ad-container {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Times of India specific (conservative) */
+.dfp-ad,
+.toi-ad {
+    display: none !important;
+}
+
+/* Google AdSense specific */
+.adsbygoogle[data-ad-slot] {
+    display: none !important;
+}
+
+/* Common ad dimensions (specific) */
+iframe[width="728"][height="90"],
+iframe[width="300"][height="250"],
+iframe[width="320"][height="50"] {
+    display: none !important;
+}

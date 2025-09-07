@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ad Blocker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>🚫 Simple Ad Blocker</h2>
+  <div id="status">Ad Blocking: ON</div>
+  <button id="toggle-btn" class="btn btn-danger">Turn OFF</button>
+  <div class="info">
+    <small>Uses EasyList rules to block ads and trackers</small>
+  </div>
+  <div class="features">
+    <p><strong>🎯 Block Specific Ads:</strong></p>
+    <small>• Ctrl+Click (⌘+Click on Mac) any ad to block it</small>
+    <small>• Hover over ads to see "🚫 Block" button</small>
+    <small>• Alt+Double-click also works</small>
+    <button id="clear-blocked-btn" class="btn btn-secondary">Clear Blocked Ads</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

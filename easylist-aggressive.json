@@ -1,0 +1,390 @@
+[
+  {
+    "id": 1,
+    "priority": 10,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://googleads.g.doubleclick.net/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 10,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://pagead2.googlesyndication.com/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 10,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://tpc.googlesyndication.com/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://s.amazon-adsystem.com/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://aax-us-east.amazon-adsystem.com/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://www.facebook.com/tr*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://connect.facebook.net/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https?://.*\\.ads\\.",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https?://.*\\.advertising\\.",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https?://.*\\.adsystem\\.",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://ads.indiatimes.com/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://timesofindia.indiatimes.com/photo.cms*",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*indiatimes\\.com.*(ads|banner|promotion)",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 7,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*\\/(ads|advertising|banner|promotion|sponsor)\\.",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 7,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*\\/(ads|advertising|banner|promotion|sponsor)\\?",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*\\/(preroll|midroll|postroll|videoads)",
+      "resourceTypes": [
+        "xmlhttprequest",
+        "media",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://adnxs.com/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://adsystem.net/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://ib.adnxs.com/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://secure.adnxs.com/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://indeed.com/rpc/log*",
+      "resourceTypes": [
+        "xmlhttprequest",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "priority": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://d2q79iu7y748jz.cloudfront.net/*",
+      "resourceTypes": [
+        "script",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://www.linkedin.com/ads/*",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "priority": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*/(sponsor|sponsored|promotion|promo).*\\.(js|css|jpg|png|gif)",
+      "resourceTypes": [
+        "script",
+        "stylesheet",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "priority": 7,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*/job.*(ads|banner|sponsor)",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image"
+      ]
+    }
+  }
+]
